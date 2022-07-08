@@ -1,0 +1,131 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black : #222C2A;
+    --white: #ffffff;
+    --primary : #824936;
+    --secondary : #F3EED9;
+    --primary-heading: 6rem;
+    --secondary-heading: 3.6rem;
+    --text-primary: 2.1rem;
+    --text-secondary : 1.8rem;
+    --main-font: 'roboto', sans-serif;
+    --secondary-font:'Playfair Display', serif;
+}
+html, body{
+    font-family: var(--main-font);
+    font-size: 62.5%;
+}
+h1,h2{
+    font-family: var(--secondary-font);
+    color: var(--primary);
+}
+h1{
+    font-size: var(--primary-heading);
+}
+h2{
+    font-size: var(--secondary-heading);
+}
+p{
+    font-size: var(--text-primary);
+}
+.text-center{
+    text-align:center;
+}
+.text-white{
+    color: var(--white);    
+}
+.container{
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+.bg-black{
+    background-color: var(--black);
+    color: var(--white);
+}
+.bg-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Hero Section */
+
+#hero{
+    background-color: var(--secondary);  
+    text-align: center;
+}
+#hero .container{
+    min-height: 660px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:min(75vw, 40%)
+}
+#hero p{
+    font-size: var(--text-secondary);
+    font-weight: lighter;
+    letter-spacing: .8rem;
+    text-transform: uppercase;
+}
+
+/* End Hero section */
+
+/* Quality Design Section */
+#quality h2{
+    margin-top: min(70px, 7vw);
+    margin-bottom: min(40px, 5vw);
+}
+#quality .row{
+    justify-content: space-between;
+}
+#quality .row .col{
+    width: 47%;
+}
+#quality{
+    margin-bottom: min(100px, 10vw);
+}
+/* Custom & Care section */
+#custom .row > .col{
+    margin-right: min(50px, 5vw);
+}
+#custom .row .col:last-child{
+    margin-right: auto;
+}
+#custom, #care{
+    padding: min(100px, 10vw);
+}
+#custom h2, #care h2{
+    margin-bottom: min(50px, 5vw);
+}
+#custom p, #care p{
+    line-height: 1.5em;    
+}
+#custon .row, #care .row{
+    justify-content: space-between;
+}
+#custom .col, #care .col{
+    width: 50%;
+}
+
+.info-img{
+    max-width: min(50%, 60%);
+}
+.info-img img{
+    width: 100%;
+}
+#care .row > .col{
+    order: 2;
+    margin-left: min(50px, 5vw);
+}
+#care .row .col:last-child{
+    order: 1;
+    margin-left: auto;
+}
